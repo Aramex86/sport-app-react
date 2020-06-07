@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div>
+    <h1>SPORT APP <sup>the Beginning</sup></h1>
+    <img src="https://image.winudf.com/v2/image/Y29tLmZ1bm55LmZhY2Vzd2FwX3NjcmVlbl8wXzE1MDg0ODc5OTJfMDIw/screen-0.jpg?fakeurl=1&type=.jpg" alt="img"/>
+  </div>
+  )
 }
 
 export default App;
