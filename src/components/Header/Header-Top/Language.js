@@ -1,8 +1,8 @@
 import React from 'react';
-import eng from '../../assets/usa.png';
-import spa from '../../assets/spain.png';
-import rus from '../../assets/russia.png';
-import Icons from '../common/Icons';
+import eng from '../../../assets/usa.png';
+// import spa from '../../../assets/spain.png';
+// import rus from '../../../assets/russia.png';
+import Icons from '../../common/Icons';
 
 const Language = (props) => {
     return (

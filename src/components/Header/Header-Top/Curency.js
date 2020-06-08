@@ -1,5 +1,5 @@
 import React from 'react';
-import Icons from '../common/Icons';
+import Icons from '../../common/Icons';
 
 const Curency = (props) => {
     return (

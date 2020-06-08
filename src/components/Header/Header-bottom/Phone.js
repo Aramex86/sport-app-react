@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../common/Icons';
+import Icon from '../../common/Icons';
 
 
 

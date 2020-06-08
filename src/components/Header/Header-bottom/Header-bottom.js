@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import Phone from './Phone';
 import Logo from './Logo';
+import SearchBar from './Search-Bar/Search-bar';
 
 
 
@@ -14,8 +15,8 @@ const HeaderBottom = (props) =>{
                     <Phone/>
                     <Navigation/>
                 </div>
-                
             </div>
+            <SearchBar/>
         </div>
     )
 }

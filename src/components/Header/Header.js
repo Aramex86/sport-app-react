@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderTop from './Header-top';
-import HeaderBottom from './Header-bottom';
+import HeaderTop from './Header-Top/Header-top';
+import HeaderBottom from './Header-bottom/Header-bottom';
 
 const Header = (props) => {
     return (
