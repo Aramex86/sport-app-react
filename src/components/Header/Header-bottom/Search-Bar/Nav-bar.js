@@ -1,5 +1,4 @@
 import React from 'react';
-import Icons from '../../../common/Icons';
 
 const NavBar = (props) => {
     return (

@@ -34,7 +34,7 @@
 //Search input
 .search-wrapp {
     position: relative;
-    width: 75%;
+    width: 70%;
 
     &-input {
         width: 100%;
@@ -69,4 +69,48 @@
             }
         }
     }
+}
+// Profile shoping cart
+.profile-wrapp{
+    display: flex;
+    width: 11%;
+    position: relative;
+}
+.item-count{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: orangered;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 58px;
+    top: 18px;
+}
+
+.user,
+.shoping
+{
+    color:#ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover{
+        color: orangered;
+    }
+}
+
+
+.summ{
+    display: flex;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
 }
