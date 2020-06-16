@@ -4,7 +4,8 @@ const NavBar = (props) => {
     return (
         <div>
             <div className="searchbar-nav">
-                <span className="searchbar-nav-name">Shop By Category |||</span>
+                <span className="searchbar-nav-name">Shop By Category</span>
+                <span className="line"></span>
             </div>
         </div>
     );
