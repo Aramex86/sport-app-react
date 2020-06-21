@@ -8,7 +8,7 @@ const Feature = (props) => {
   let name = props.products.map((p,i)=> <FeatureName name={p.name} key={i}/>);
 
   return (
-    <div className="feature__wrapp">
+    <section className="feature__wrapp">
       <div className="feature__wrapp-item">
         <div className="item-text">
           <p>
@@ -45,7 +45,7 @@ const Feature = (props) => {
             {img[2]}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

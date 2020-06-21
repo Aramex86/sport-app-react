@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderTop from './Header-Top/Header-top';
+import HeaderTop from './Header-top/Header-top';
 import HeaderBottom from './Header-bottom/Header-bottom';
 import CarouselContainer from '../Slider/SliderContainer';
 

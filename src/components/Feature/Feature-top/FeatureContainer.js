@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Feature from './Feature';
+import FeatureBottom from "../Feature-bottom/Feature-bottom";
 
 class FeatureConainer extends React.Component {
     
@@ -9,7 +10,10 @@ class FeatureConainer extends React.Component {
           products
       }=this.props;
     
-    return <Feature {...this.props}/>;
+    return (<>
+    <Feature {...this.props}/>
+    <FeatureBottom/>
+    </>);
   }
 }
 let mapStateToProps=(state)=>{
