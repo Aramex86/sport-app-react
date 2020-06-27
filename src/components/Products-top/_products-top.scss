@@ -3,8 +3,7 @@
   margin: 0 auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   padding: 5rem 0;
-  //test
-  height: 20rem;
+
   &-header {
     background-color: #343748;
     width: 100%;
@@ -12,10 +11,85 @@
     justify-content: space-between;
     padding: 1rem 5rem;
     //test
-    color:#ffffff;
-    &-link{
-        color:#fff;
-        text-decoration: none;
+    color: #ffffff;
+    &-link {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 2rem;
+    }
+  }
+}
+
+.featureproducts {
+  // display:flex;
+  // flex-wrap: wrap;
+  // justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 10px;
+  padding: 5rem 3rem;
+}
+
+//Product Card
+
+.card__wrapp {
+  width: 100%;
+  position: relative;
+
+  &-image--wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    position: relative;
+    background-color: rgba(197, 200, 214, 0.29);
+    & img {
+      width: 75%;
+    }
+    & span{
+      background-color: rgba(40, 42, 55, 0.9);
+      color:#ffffff;
+      position: absolute;
+      top: 10px;
+      right:10px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      width: 13%;
+      height: 6%;
+      text-align: center;
+    }
+  }
+  &-eye{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(40, 42, 55, 0.9);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    & svg{
+      color:#ffffff;
+    }
+  }
+  &-desc--wrap{
+    margin-top: 5px;
+    &-raiting{
+
+      & svg{
+        margin-right: 5px;
+      }
+    }
+    &-name{
+      margin-top: 5px;
+
+    }
+    &-price{
+      margin-top: 5px;
     }
   }
 }

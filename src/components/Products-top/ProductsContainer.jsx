@@ -3,6 +3,7 @@ import { Link, Route } from "react-router-dom";
 import FeatureProducts from "./FeatureProducts";
 import BestSellers from "./BestSellers";
 import NewArrivals from "./NewArrivals";
+import { connect } from "react-redux";
 
 class ProductsContainer extends Component {
   render() {
@@ -29,7 +30,7 @@ class ProductsContainer extends Component {
             <button className="btn-next">next</button>
           </div>
         </div>
-        <Route path="/featuresproducts" render={() => <FeatureProducts />} />
+        <Route path="/featuresproducts" render={() => <FeatureProducts {...this.props}/>} />
         <Route path="/bestsellers" render={() => <BestSellers />} />
         <Route path="/newarrivals" render={() => <NewArrivals />} />
       </section>
@@ -37,4 +38,16 @@ class ProductsContainer extends Component {
   }
 }
 
-export default ProductsContainer;
+let mapStateToProps=(state)=>{
+  return{
+    products:state.featureProd.products
+  }
+}
+
+let mapDispatchToProps=(dispatch)=>{
+return{}
+}
+ 
+let ProductsComponent = connect(mapStateToProps,mapDispatchToProps)(ProductsContainer)
+
+export default ProductsComponent;

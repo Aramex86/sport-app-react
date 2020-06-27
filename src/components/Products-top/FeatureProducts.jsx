@@ -1,9 +1,12 @@
 import React from 'react'
+import ProductCard from './ProductCard';
 
 export default function FeatureProducts(props) {
+    const product = props.products.map(p => <ProductCard image={p.img}/>)
+
     return (
-        <div>
-            <h1>Feature Products</h1>
+        <div className="featureproducts">
+            {product}
         </div>
     )
 }
