@@ -12,6 +12,7 @@
     padding: 1rem 5rem;
     //test
     color: #ffffff;
+
     &-link {
       color: #fff;
       text-decoration: none;
@@ -35,6 +36,7 @@
 .card__wrapp {
   width: 100%;
   position: relative;
+  cursor: pointer;
 
   &-image--wrap {
     display: flex;
@@ -43,15 +45,17 @@
     padding: 2rem 2rem;
     position: relative;
     background-color: rgba(197, 200, 214, 0.29);
+
     & img {
       width: 75%;
     }
-    & span{
+
+    & span {
       background-color: rgba(40, 42, 55, 0.9);
-      color:#ffffff;
+      color: #ffffff;
       position: absolute;
       top: 10px;
-      right:10px;
+      right: 10px;
       border-radius: 10px;
       font-size: 1.2rem;
       width: 13%;
@@ -59,11 +63,12 @@
       text-align: center;
     }
   }
-  &-eye{
+
+  &-eye {
     position: absolute;
     left: 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(40, 42, 55, 0.9);
     width: 4rem;
     height: 4rem;
@@ -71,25 +76,74 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    opacity: 0;
 
-    & svg{
-      color:#ffffff;
+    &:hover {
+      background-color: orangered;
     }
-  }
-  &-desc--wrap{
-    margin-top: 5px;
-    &-raiting{
 
-      & svg{
+    & svg {
+      color: #ffffff;
+    }
+
+  }
+
+  &-desc--wrap {
+    margin-top: 5px;
+
+    &-raiting {
+      & svg {
         margin-right: 5px;
       }
     }
-    &-name{
-      margin-top: 5px;
 
-    }
-    &-price{
+    &-name {
       margin-top: 5px;
+      text-transform: capitalize;
     }
+
+    &-price {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // hover effects
+  &:hover &-image--wrap {
+    & img {
+      filter: blur(1px);
+    }
+  }
+
+  &:hover &-eye {
+    opacity: 1;
+    transition: all 1s ease;
+  }
+
+  &:hover &-desc--wrap {
+
+    &-raiting {
+      transform: translate(0, -100%);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+
+    &-name {
+      transform: translate(0, -100%);
+      transition: all 1s ease;
+    }
+
+    &-price {
+      transform: translate(0, -100%);
+      transition: all 1s ease;
+    }
+
+  }
+
+  &:hover .product-btn {
+    transform: translate(0, -55%);
+    transition: all 1s ease;
+    opacity: 1;
   }
 }

@@ -23,129 +23,129 @@ let initialState={
     products:[
         {
             id:1,
-            name:'baseball-boots',
+            name:'Baseball Boots',
             deals:'Best Deals In',
             img:`${boots}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:2,
-            name:'baseball-gloves',
+            name:'Baseball Gloves',
             deals:'Limited Offer In',
             img:`${gloves}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:3,
-            name:'helmet',
+            name:'Helmet',
             deals:'Newest Arrivals',
             img:`${helmet}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:4,
-            name:'nikebag',
+            name:'Nikebag',
             deals:'Newest Arrivals',
             img:`${nikebag}`,
-            price:30
+            price:29.99
         },
         {
             id:5,
-            name:'nikehat',
+            name:'Nikehat',
             deals:'Newest Arrivals',
             img:`${nikehat}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:6,
-            name:'ruksak',
+            name:'Backpack',
             deals:'Newest Arrivals',
             img:`${ruksak}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:7,
-            name:'shitki',
+            name:'Fotball Shields',
             deals:'Newest Arrivals',
             img:`${shitki}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:8,
-            name:'skakalka',
+            name:'jump Rope',
             deals:'Newest Arrivals',
             img:`${skakalka}`,
             discount:20,
-            price:30
+            price:29.99
         },
         {
             id:9,
-            name:'socks',
+            name:'Sport Socks',
             deals:'Newest Arrivals',
             img:`${socks}`,
-            price:30
+            price:29.99
         },
         {
             id:10,
-            name:'sportbag',
+            name:'Sportbag',
             deals:'Newest Arrivals',
             img:`${sportbag}`,
-            price:30
+            price:29.99
         },
         {
             id:11,
-            name:'sportgloves',
+            name:'Sport Gloves',
             deals:'Newest Arrivals',
             img:`${sportgloves}`,
-            price:30
+            price:29.99
         },
         {
             id:12,
-            name:'sportshoes',
+            name:'Sneakers',
             deals:'Newest Arrivals',
             img:`${sportshoes}`,
-            price:30
+            price:29.99
         },
         {
             id:13,
-            name:'sportshots',
+            name:'Athletic Shorts',
             deals:'Newest Arrivals',
             img:`${sportshots}`,
-            price:30
+            price:29.99
         },
         {
             id:14,
-            name:'sportsmart',
+            name:'Smart Sport Watch',
             deals:'Newest Arrivals',
             img:`${sportsmart}`,
-            price:30
+            price:29.99
         },
         {
             id:15,
-            name:'sportt-shirt',
+            name:'Sport Tshirt',
             deals:'Newest Arrivals',
             img:`${sporttshirt}`,
-            price:30
+            price:29.99
         },
         {
             id:16,
-            name:'sportwatch1',
+            name:'Sport Watch',
             deals:'Newest Arrivals',
             img:`${sportwatch1}`,
-            price:30
+            price:29.99
         },
         {
             id:17,
             name:'taybox',
             deals:'Newest Arrivals',
             img:`${taybox}`,
-            price:30
+            price:29.99
         },
     ]
 }
