@@ -70,7 +70,13 @@
  & select{
      outline: transparent;
      border: none;
-     font-weight: bold;
+     cursor: pointer;
+     &:hover{
+         color:orangered;
+     }
+     & option{
+         color:black;
+     }
  }
 }
 
