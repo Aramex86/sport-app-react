@@ -3,31 +3,29 @@ import Icon from "../../../common/Icons";
 import { NavLink } from "react-router-dom";
 
 class NavBar extends React.Component {
-    state={
-      onMenu:true
-    }
+  state = {
+    onMenu: true,
+  };
 
-    showMenu=()=>{
-      if(this.state.onMenu==false){
-        this.setState({
-          onMenu:true
-        });
-      }else{
-        this.setState({
-          onMenu:false
-        });
-      }
+  showMenu = () => {
+    if (this.state.onMenu == false) {
+      this.setState({
+        onMenu: true,
+      });
+    } else {
+      this.setState({
+        onMenu: false,
+      });
     }
-     
-    
+  };
 
   render() {
     return (
       <div>
         <div className="searchbar__nav" onClick={this.showMenu}>
-          <span className="searchbar__nav-name" >Shop By Category</span>
+          <span className="searchbar__nav-name">Shop By Category</span>
           <span className="line"></span>
-          <div className={this.state.onMenu?"hide":"searchbar__nav-menu"}>
+          <div className={this.state.onMenu ? "hide" : "searchbar__nav-menu"}>
             <ul className="nav-list">
               <li className="nav-list-item">
                 <NavLink to="/Sports Aceessories" className="nav-list-link">

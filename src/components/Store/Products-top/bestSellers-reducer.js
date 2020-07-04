@@ -19,21 +19,24 @@ import taybox from '../../../assets/products/taybox.png';
 
 ////////////////////////
 
+
+
 let initialState={
-    products:[
+    products1:[
         {
             id:1,
-            name:'Baseball Boots',
-            deals:'Best Deals In',
-            img:`${boots}`,
-            discount:20,
-            price:29.99
-        },
-        {
-            id:2,
             name:'Baseball Gloves',
             deals:'Limited Offer In',
             img:`${gloves}`,
+            discount:20,
+            price:29.99
+            
+        },
+        {
+            id:2,
+            name:'Baseball Boots',
+            deals:'Best Deals In',
+            img:`${boots}`,
             discount:20,
             price:29.99
         },
@@ -142,19 +145,19 @@ let initialState={
             discount:20,
             price:29.99
         },
-        {
-            id:17,
-            name:'taybox',
-            deals:'Newest Arrivals',
-            img:`${taybox}`,
-            discount:15,
-            price:29.99
-        },
+        // {
+        //     id:17,
+        //     name:'taybox',
+        //     deals:'Newest Arrivals',
+        //     img:`${taybox}`,
+        //     discount:15,
+        //     price:29.99
+        // },
     ]
 }
 
 
-const featureProducts=(state=initialState,action)=>{
+const bestSellers=(state=initialState,action)=>{
     switch(action.type){
         default:
             return state;
@@ -163,4 +166,4 @@ const featureProducts=(state=initialState,action)=>{
 
 
 
-export default featureProducts;
+export default bestSellers;

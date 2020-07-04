@@ -101,11 +101,22 @@
       margin-top: 5px;
       text-transform: capitalize;
     }
-
-    &-price {
+    &-priceWrapp{
+      display: flex;
+      align-items: baseline;
       margin-top: 5px;
+    }
+    
+    &-price {
       display: flex;
       align-items: center;
+      margin-right: 5px;
+    }
+    &-oldprice{
+      display: flex;
+      align-items: center;
+      color: rgb(180, 180, 180);
+      text-decoration: line-through;
     }
   }
 
@@ -124,26 +135,37 @@
   &:hover &-desc--wrap {
 
     &-raiting {
-      transform: translate(0, -100%);
-      opacity: 0;
-      transition: all 1s ease;
+      // transform: translate(0, -100%);
+      // opacity: 0;
+      // transition: all 1s ease;
+      margin-bottom: 10px;
     }
 
     &-name {
-      transform: translate(0, -100%);
+      transform: translate(0, -35%);
       transition: all 1s ease;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    &-price {
-      transform: translate(0, -100%);
+    &-priceWrapp {
+      transform: translate(0, -50%);
       transition: all 1s ease;
     }
 
   }
 
   &:hover .product-btn {
-    transform: translate(0, -55%);
+    transform: translate(0, -35%);
     transition: all 1s ease;
     opacity: 1;
   }
+}
+
+
+.bestsellers{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 10px;
+  padding: 5rem 3rem;
 }
