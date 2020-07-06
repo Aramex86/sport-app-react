@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import ProductCard from "./ProductCard";
 
-export default function NewArrivals() {
-    return (
-        <div>
-            <h1>New Arrivals</h1>
-        </div>
-    )
+
+export default function NewArrivals(props) {
+    const product = props.products2.map((p, i) => (
+        <ProductCard
+          id={p.id}
+          image={p.img}
+          name={p.name}
+          price={p.price}
+          discount={p.discount}
+          key={i}
+        />
+      ));
+      return <div className="bestsellers">{product}</div>;
 }

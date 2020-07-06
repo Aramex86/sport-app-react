@@ -36,7 +36,7 @@ class ProductsContainer extends Component {
             path="/bestsellers"
             render={() => <BestSellers {...this.props} />}
           />
-          <Route path="/newarrivals" render={() => <NewArrivals />} />
+          <Route path="/newarrivals" render={() => <NewArrivals {...this.props}/>} />
         </Switch>
       </section>
     );
@@ -46,7 +46,8 @@ class ProductsContainer extends Component {
 let mapStateToProps = (state) => {
   return {
     products: state.featureProd.products,
-    products1: state.BestSellers.products1,
+    products1: state.bestSellers.products1,
+    products2:state.newArrival.products2
   };
 };
 
