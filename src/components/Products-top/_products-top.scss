@@ -19,11 +19,16 @@
       border: none;
       cursor: pointer;
       outline: none;
+      font-size: 1.5rem;
+      transition: all .2s ease-in;
       &:hover {
         color: #ff5f2b;
       }
       &:not(:last-child) {
         border-right: 1px solid rgba(197, 200, 214, 0.29);
+      }
+      &:focus{
+        color:#ff5f2b;
       }
     }
   }

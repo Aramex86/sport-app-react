@@ -3,6 +3,7 @@ import Icon from "../common/Icons";
 import AddToChartBtn from "../common/AddToChartBtn";
 
 export default function ProductCard(props) {
+  
   const discountPrice = Math.round((props.price * props.discount) / 100);
   const newPrice = props.price - discountPrice;
 
@@ -18,8 +19,8 @@ export default function ProductCard(props) {
       </div>
       <div className="card__wrapp-desc--wrap">
         <div className="card__wrapp-desc--wrap-raiting">
-          <Icon icon="star-full" size={17} color="orangered" />
-          <Icon icon="star-full" size={17} color="orangered" />
+          <Icon icon="star-empty" size={17} color="orangered" />
+          <Icon icon="star-empty" size={17} color="orangered" />  
           <Icon icon="star-empty" size={17} color="orangered" />
           <Icon icon="star-empty" size={17} color="orangered" />
           <Icon icon="star-empty" size={17} color="orangered" />
@@ -42,3 +43,4 @@ export default function ProductCard(props) {
     </div>
   );
 }
+//star-full

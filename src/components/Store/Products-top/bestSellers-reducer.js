@@ -115,44 +115,44 @@ let initialState={
             discount:15,
             price:29.99
         },
-        {
-            id:13,
-            name:'Baseball Boots',
-            deals:'Best Deals In',
-            img:`${boots}`,
-            discount:20,
-            price:29.99
-        },
-        {
-            id:14,
-            name:'Athletic Shorts',
-            deals:'Newest Arrivals',
-            img:`${sportshots}`,
-            price:29.99
-        },
-        {
-            id:15,
-            name:'Smart Sport Watch',
-            deals:'Newest Arrivals',
-            img:`${sportsmart}`,
-            discount:10,
-            price:29.99
-        },
-        {
-            id:16,
-            name:'Sport Tshirt',
-            deals:'Newest Arrivals',
-            img:`${sporttshirt}`,
-            price:29.99
-        },
-        {
-            id:17,
-            name:'Sport Watch',
-            deals:'Newest Arrivals',
-            img:`${sportwatch1}`,
-            discount:20,
-            price:29.99
-        },
+        // {
+        //     id:13,
+        //     name:'Baseball Boots',
+        //     deals:'Best Deals In',
+        //     img:`${boots}`,
+        //     discount:20,
+        //     price:29.99
+        // },
+        // {
+        //     id:14,
+        //     name:'Athletic Shorts',
+        //     deals:'Newest Arrivals',
+        //     img:`${sportshots}`,
+        //     price:29.99
+        // },
+        // {
+        //     id:15,
+        //     name:'Smart Sport Watch',
+        //     deals:'Newest Arrivals',
+        //     img:`${sportsmart}`,
+        //     discount:10,
+        //     price:29.99
+        // },
+        // {
+        //     id:16,
+        //     name:'Sport Tshirt',
+        //     deals:'Newest Arrivals',
+        //     img:`${sporttshirt}`,
+        //     price:29.99
+        // },
+        // {
+        //     id:17,
+        //     name:'Sport Watch',
+        //     deals:'Newest Arrivals',
+        //     img:`${sportwatch1}`,
+        //     discount:20,
+        //     price:29.99
+        // },
        
     ]
 }

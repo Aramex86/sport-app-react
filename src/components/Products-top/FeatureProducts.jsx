@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 export default function FeatureProducts(props) {
-  const product = props.products.map((p,i) => (
+  const product = props.products.map((p, i) => (
     <ProductCard
       image={p.img}
       name={p.name}
