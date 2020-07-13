@@ -6,7 +6,6 @@ export default function ProductCard(props) {
   
   const discountPrice = Math.round((props.price * props.discount) / 100);
   const newPrice = props.price - discountPrice;
-
   return (
     <div className="card__wrapp">
       <div className="card__wrapp-image--wrap">
@@ -19,6 +18,7 @@ export default function ProductCard(props) {
       </div>
       <div className="card__wrapp-desc--wrap">
         <div className="card__wrapp-desc--wrap-raiting">
+  <span>{props.rating}</span> <button onClick={props.setStar()}>click</button>
           <Icon icon="star-empty" size={17} color="orangered" />
           <Icon icon="star-empty" size={17} color="orangered" />  
           <Icon icon="star-empty" size={17} color="orangered" />

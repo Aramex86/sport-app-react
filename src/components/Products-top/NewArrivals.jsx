@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 
 export default function NewArrivals(props) {
-    const product = props.products2.map((p, i) => (
+    const product = props.products.map((p, i) => (
         <ProductCard
           id={p.id}
           image={p.img}

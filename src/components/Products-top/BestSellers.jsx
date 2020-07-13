@@ -2,10 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 export default function BestSellers(props) {
-  
-  
-
-  const product = props.products1.map((p, i) => (
+  const product = props.products.map((p, i) => (
     <ProductCard
       id={p.id}
       image={p.img}

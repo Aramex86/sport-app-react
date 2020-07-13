@@ -20,7 +20,7 @@ import taybox from "../../../assets/products/taybox.png";
 ////////////////////////
 
 let initialState = {
-  products2: [
+  products: [
     {
       id: 1,
       name: "Nikehat",

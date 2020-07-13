@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import FeatureProducts from "./FeatureProducts";
-import BestSellers from "./BestSellers";
-import NewArrivals from "./NewArrivals";
-import { connect } from "react-redux";
-import {setRating} from '../Store/Products-top/featureProducts-reducer';
+import FeatureProductsContainer from "./FeatureProductsContainer";
+import BestSellersContainer from "./BestSellersContainer";
+import NewArrivalsContainer from "./NewArrivalsContainer";
 
 class ProductsContainer extends Component {
   state = {
@@ -64,40 +62,14 @@ class ProductsContainer extends Component {
               New Arrivals
             </button>
           </nav>
-
-          {/* <div className="btn__wrapp">
-            <button className="btn-prev">prev</button>
-            <button className="btn-next">next</button>
-          </div> */}
         </div>
 
-        {this.state.f ? <FeatureProducts {...this.props}/> : <div></div>}
-        {this.state.b ? <BestSellers {...this.props} /> : <div></div>}
-        {this.state.n ? <NewArrivals {...this.props} /> : <div></div>}
+        {this.state.f ? <FeatureProductsContainer /> : <div></div>}
+        {this.state.b ? <BestSellersContainer /> : <div></div>}
+        {this.state.n ? <NewArrivalsContainer /> : <div></div>}
       </section>
     );
   }
 }
 
-let mapStateToProps = (state) => {
-  return {
-    products: state.featureProd.products,
-    products1: state.bestSellers.products1,
-    products2: state.newArrival.products2,
-  };
-};
-
-let mapDispatchToProps = (dispatch) => {
-  return {
-    rateItem:(rating)=>{
-      dispatch(setRating(rating))
-    }
-  };
-};
-
-let ProductsComponent = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ProductsContainer);
-
-export default ProductsComponent;
+export default ProductsContainer;

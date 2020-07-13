@@ -175,15 +175,14 @@ const featureProducts=(state=initialState,action)=>{
         case RATE_COLOR:
             return{
                 ...state,
-                rating:action.rating
             }
         default:
             return state;
     }
 }
 
-export const setRating=(rating)=>{
-    return{type:RATE_COLOR,rating}
+export const setRating=()=>{
+    return{type:RATE_COLOR}
 }
 
 export default featureProducts;

@@ -22,7 +22,7 @@ import taybox from '../../../assets/products/taybox.png';
 
 
 let initialState={
-    products1:[
+    products:[
         {
             id:1,
             name:'Fotball Shields',
