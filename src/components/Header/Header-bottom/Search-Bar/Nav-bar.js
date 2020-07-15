@@ -3,6 +3,7 @@ import Icon from "../../../common/Icons";
 import { NavLink } from "react-router-dom";
 
 class NavBar extends React.Component {
+  
   state = {
     onMenu: true,
   };

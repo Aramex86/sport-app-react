@@ -17,8 +17,8 @@ const mapStateToProps =state=>{
  
 const mapDispatchToProps= dispatch =>{
   return{
-    setStar:()=>{
-      dispatch(setRating());
+    setStar:(rating)=>{
+      dispatch(setRating(rating));
     }
   }
 }

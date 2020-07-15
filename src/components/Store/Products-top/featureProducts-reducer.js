@@ -19,7 +19,7 @@ import taybox from '../../../assets/products/taybox.png';
 
 ////////////////////////
 
-const RATE_COLOR = "RATE_COLOR";
+const RATE_ITEM = "RATE_ITEM";
 
 let initialState={
     products:[
@@ -172,17 +172,19 @@ let initialState={
 
 const featureProducts=(state=initialState,action)=>{
     switch(action.type){
-        case RATE_COLOR:
+        case RATE_ITEM :
             return{
                 ...state,
+                rating:state.products.rating +1
+
             }
         default:
             return state;
     }
 }
 
-export const setRating=()=>{
-    return{type:RATE_COLOR}
+export const setRating=(rating)=>{
+    return{type: RATE_ITEM,rating}
 }
 
 export default featureProducts;
