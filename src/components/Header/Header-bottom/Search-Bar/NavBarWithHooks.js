@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Icon from "../../../common/Icons";
 import { NavLink } from "react-router-dom";
 
 const NavBarWithHooks = () => {
   const [onMenu, setOnMenu] = useState(true);
 
-  showMenu = () => {
-    if (setOnMenu === false) {
-      onMenu = true;
+  const showMenu = () => {
+    if (onMenu === false) {
+      setOnMenu(true);
     } else {
-      onMenu = false;
+      setOnMenu(false);
     }
   };
 
@@ -18,7 +18,7 @@ const NavBarWithHooks = () => {
       <div className="searchbar__nav" onClick={showMenu}>
         <span className="searchbar__nav-name">Shop By Category</span>
         <span className="line"></span>
-        <div className={this.state.onMenu ? "hide" : "searchbar__nav-menu"}>
+        <div className={onMenu ? "hide" : "searchbar__nav-menu"}>
           <ul className="nav-list">
             <li className="nav-list-item">
               <NavLink to="/Sports Aceessories" className="nav-list-link">

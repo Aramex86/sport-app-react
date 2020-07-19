@@ -1,0 +1,44 @@
+.paralax__wrapp {
+  width: 100%; 
+  background-image: url(../../assets/box.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20rem 0;
+  // test
+  margin-bottom: 300px;
+  &-text{
+      width: 30%;
+      position: absolute;
+      left: 10%;
+      top:50%;
+      transform: translate(-10%,-50%);
+      color: #ffffff;
+      &-list{
+
+      }
+      &-item1{
+        font-size: 2rem;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      &-item2{
+        font-size: 4rem;
+        letter-spacing: 3px;
+        font-weight: 100;
+        & span{
+            font-weight: bold;
+        }
+
+      }
+      &-item3{
+        font-size: 4rem;
+        font-weight: 600;
+        color: #ff5f2b;
+      }
+  }
+}
