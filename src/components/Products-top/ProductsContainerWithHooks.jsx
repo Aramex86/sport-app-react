@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import FeatureProductsContainer from "./FeatureProductsContainer";
 import BestSellersContainer from "./BestSellersContainer";
 import NewArrivalsContainer from "./NewArrivalsContainer";

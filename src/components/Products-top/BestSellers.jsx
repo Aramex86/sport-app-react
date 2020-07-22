@@ -1,6 +1,5 @@
 import React from "react";
-import ProductCard from "./ProductCard";
-
+import ProductCard from "../common/ProductCard";
 export default function BestSellers(props) {
   const product = props.products.map((p, i) => (
     <ProductCard

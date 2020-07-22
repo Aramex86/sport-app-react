@@ -5,6 +5,7 @@ import FeatureContainer from './components/Feature/Feature-top/FeatureContainer'
 //import ProductsContainer from './components/Products-top/ProductsContainer';
 import ProductsContainerWithHooks from './components/Products-top/ProductsContainerWithHooks';
 import Paralax from './components/Paralax/Paralax';
+import ProductsBottomContainer from './components/Products-bottom/ProductsBottomContainer';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
     <FeatureContainer/>
     <ProductsContainerWithHooks/>
     <Paralax />
+    <ProductsBottomContainer/>
+    
   </div>
   )
   

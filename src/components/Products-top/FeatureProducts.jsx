@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "../common/ProductCard";
 
  const FeatureProducts=(props)=> {
   const product = props.products.map((p, i) => (
